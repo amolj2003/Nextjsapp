@@ -15,7 +15,8 @@ function Header() {
        <Image src="https://links.papareact.com/qd3"
        layout="fill"
        objectFit="contain"
-       objectPosition="left"/>
+       objectPosition="left"
+       alt="Picture of the author"/>
      </div>
 
      <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
