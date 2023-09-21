@@ -1,7 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 
-function LargeCard({img ,title,description,buttonText}) {
+interface LargeCardProps {
+  img: string;
+  title: string;
+  description: string;
+  buttonText: string;
+}
+
+function LargeCard({img ,title,description,buttonText} : LargeCardProps) {
   return (
      
      <section className="relative py-16 cursor-pointer">
@@ -11,6 +18,7 @@ function LargeCard({img ,title,description,buttonText}) {
       layout="fill"
       objectFit="cover"
       className="rounded-2xl"
+      alt="Picture of the author"
       />
       </div>
 

@@ -7,7 +7,20 @@ import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ exploreData,cardsData }) {
+type ExploreData = {
+  img: string;
+  distance: string;
+  location: string;
+};
+
+type CARDDATA = {
+   img:string; 
+   title:string
+};
+
+
+
+export default function Home({ exploreData,cardsData }:{ exploreData: ExploreData[] ,cardsData: CARDDATA[] }) {
   return (
     <main
       className="max-w-7xl mx-auto px-8 sm:px-16">
@@ -31,7 +44,7 @@ export default function Home({ exploreData,cardsData }) {
          <h2 className="text-4xl font-semibold py-8"> Live Anywhere</h2>
          <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
             { cardsData?.map(item=>(
-              <MediumCard item={item.img} img={item.img} title={item.title}/>
+              <MediumCard  key={item.img}  img={item.img} title={item.title}/>
             ))}
          </div>
       </section>  
