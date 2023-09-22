@@ -28,7 +28,7 @@ function Header() {
             width={35}
             height={35}
             alt="Picture of the author"
-            className="hidden md:inline-flex h-8 text-white rounded-full p-1  cursor-pointer md:mx-2"/>
+            className="hidden md:inline-flex h-8 text-white rounded-full   cursor-pointer md:mx-2"/>
        {/*<SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" /> */} 
      </div>
      
@@ -38,14 +38,14 @@ function Header() {
             width={30}
             height={5}
             alt="Picture of the author"
-            className="hidden md:inline-flex h-8 text-white rounded-full p-1 cursor-pointer md:mx-2"/>
+            className="hidden md:inline-flex h-7 text-white rounded-full p-1 cursor-pointer md:mx-2"/>
        {/* <GlobeAltIcon className="h-6"/>*/}
       <div className="flex  items-center space-x-2 border-2 p-2 rounded-full">
       <Image src="/more.png"
             width={30}
             height={30}
             alt="Picture of the author"
-            className="hidden md:inline-flex h-8 text-white rounded-full p-1 cursor-pointer md:mx-2"/>
+            className="hidden md:inline-flex h-7 text-white rounded-full  cursor-pointer md:mx-2"/>
        {/*<MenuIcon className="h-6"/>*/}
         <Image src="/user.png"
             width={30}
