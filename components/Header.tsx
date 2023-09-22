@@ -35,23 +35,23 @@ function Header() {
      <div className="flex items-center space-x-4 justify-end text-gray-500">
         <p className="hidden md:inline cursor-pointer "> Become a host </p>
         <Image src="/globe.png"
-            width={24}
+            width={30}
             height={5}
             alt="Picture of the author"
-            className="h-6"/>
+            className="hidden md:inline-flex h-8 text-white rounded-full p-1 cursor-pointer md:mx-2"/>
        {/* <GlobeAltIcon className="h-6"/>*/}
-      <div className="flex  items-center space-x-3 border-2 p-2 rounded-full">
+      <div className="flex  items-center space-x-2 border-2 p-2 rounded-full">
       <Image src="/more.png"
-            width={25}
+            width={30}
             height={30}
             alt="Picture of the author"
-            className="h-6"/>
+            className="hidden md:inline-flex h-8 text-white rounded-full p-1 cursor-pointer md:mx-2"/>
        {/*<MenuIcon className="h-6"/>*/}
         <Image src="/user.png"
-            width={25}
+            width={30}
             height={5}
             alt="Picture of the author"
-
+            
             className="h-6"/>
       
        {/*<UserCircleIcon className="h-6"/>*/}

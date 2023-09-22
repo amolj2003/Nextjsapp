@@ -44,7 +44,7 @@ export default function Home({ exploreData,cardsData }:{ exploreData: ExploreDat
          <h2 className="text-4xl font-semibold py-8"> Live Anywhere</h2>
          <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
             { cardsData?.map(item=>(
-              <MediumCard item={item.img} img={item.img} title={item.title}/>
+              <MediumCard key={item.img} img={item.img} title={item.title}/>
             ))}
          </div>
       </section>  
@@ -56,6 +56,7 @@ export default function Home({ exploreData,cardsData }:{ exploreData: ExploreDat
        />
 
       <Footer />
+      <h1> ha </h1>
      </main>
    
   )
